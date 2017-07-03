@@ -42,13 +42,13 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "1024"
+          "2048"
         ],
         [
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "1"
+          "2"
         ]
       ],
       "hard_drive_interface": "sata",
@@ -58,7 +58,7 @@
   ],
   "post-processors": [
     {
-      "output": "builds/ubuntu-16.04.box",
+      "output": "packer-ubuntu-16.04.box",
       "type": "vagrant"
     }
   ],
